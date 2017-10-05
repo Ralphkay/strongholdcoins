@@ -1,0 +1,51 @@
+{# {% extends "account/base.html" %} #}
+{% extends 'strongholdcoins/dashboard_views/base_layout.html' %}
+{% load i18n %}
+{% load bootstrap %}
+{% block body_class %}account account-settings{% endblock %}
+{% block head_title %}{% trans "Account" %}{% endblock %}
+{% block content %}
+    <main class="main">
+        <div class="container-fluid">
+            
+<div class="row">
+                <div class="col-md-4">
+                        <div class="card ">
+                                <h4 class="card-header text-white bg-success text-white">
+                               Account Setting
+                                </h4>
+                                <div class="card-body">
+                                    <h4 class="card-title">Buy. Sell. Invest</h4>
+                                    <p class="card-text">To buy, sell or invest please use the form below. You can use the Bit calculator to know our rate</p>
+
+                                
+                               {% include "strongholdcoins/dashboard_views/toast-messages.html"%}
+                <form method="POST" action="{% url "account_settings" %}">
+                    <legend>{% trans "Account" %}</legend>
+                    {% csrf_token %}
+                    {{ form|bootstrap }}
+                    <button class="btn btn-primary" type="submit">{% trans "Save" %}</button>
+                </form>
+                                
+                            </div>  
+        </div>
+        </div>
+            <div class="col-md-2 panel panel-default">
+              
+                <div class="list-group">
+                 <li class="list-group-item active">Settings Menu</li>
+                    <a class="list-group-item account-settings" href="{% url "account_settings" %}">
+                        Account
+                    </a>
+                    <a class="list-group-item account-password" href="{% url "account_password" %}">
+                        Change password
+                    </a>
+                    <a class="list-group-item account-delete" href="{% url "account_delete" %}">
+                        Delete account
+                    </a>
+                </div>
+            </div>
+</div>
+        </div>
+    </main>
+{% endblock %}

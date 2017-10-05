@@ -1,0 +1,129 @@
+/*******************************
+FLAT COLORS - BACKGROUNDS
+********************************/
+
+.green-bg { /*emerald*/
+    background-color: #2ECC71;
+}
+.dark-green-bg { /*nephritis*/
+    background-color: #27ae60;
+}
+.turquoise-bg { /*turquoise*/
+    background-color: #1abc9c;
+}
+.dark-turquoise-bg { /*green sea*/
+    background-color: #16a085;
+}
+.blue-bg { /*peter river*/
+    background-color: #3498db;
+}
+.dark-blue-bg { /*belize hole*/
+    background-color: #2980b9;
+}
+.purple-bg { /*amethyst*/
+    background-color: #9b59b6;
+}
+.dark-purple-bg { /*wisteria*/
+    background-color: #8e44ad;
+}
+.navyblue-bg { /*wet asphalt*/
+    background-color: #34495e;
+}
+.dark-navyblue-bg { /*midnight blue*/
+    background-color: #2c3e50;
+}
+.yellow-bg { /*sun flower*/
+    background-color: #f1c40f;
+}
+.dark-yellow-bg { /*orange*/
+    background-color: #f39c12;
+}
+.orange-bg { /*carrot*/
+    background-color: #e67e22;
+}
+.dark-orange-bg { /*pumpkin*/
+    background-color: #d35400;
+}
+.red-bg { /*alizarin*/
+    background-color: #e74c3c;
+}
+.dark-red-bg { /*pomegranate*/
+    background-color: #c0392b;
+}
+.white-bg { /*clouds*/
+    background-color: #ecf0f1;
+}
+.dark-white-bg { /*silver*/
+    background-color: #bdc3c7;
+}
+.grey-bg { /*concrete*/
+    background-color: #95a5a6;
+}
+.dark-grey-bg { /*asbestos*/
+    background-color: #7f8c8d;
+}
+
+/*******************************
+FLAT COLORS - FONTS
+********************************/
+
+.green-font { /*emerald*/
+    color: #2ECC71;
+}
+.dark-green-font { /*nephritis*/
+    color: #27ae60;
+}
+.turquoise-font { /*turquoise*/
+    color: #1abc9c;
+}
+.dark-turquoise-font { /*green sea*/
+    color: #16a085;
+}
+.blue-font { /*peter river*/
+    color: #3498db;
+}
+.dark-blue-font { /*belize hole*/
+    color: #2980b9;
+}
+.purple-font { /*amethyst*/
+    color: #9b59b6;
+}
+.dark-purple-font { /*wisteria*/
+    color: #8e44ad;
+}
+.navyblue-font { /*wet asphalt*/
+    color: #34495e;
+}
+.dark-navyblue-font { /*midnight blue*/
+    color: #2c3e50;
+}
+.yellow-font { /*sun flower*/
+    color: #f1c40f;
+}
+.dark-yellow-font { /*orange*/
+    color: #f39c12;
+}
+.orange-font { /*carrot*/
+    color: #e67e22;
+}
+.dark-orange-font { /*pumpkin*/
+    color: #d35400;
+}
+.red-font { /*alizarin*/
+    color: #e74c3c;
+}
+.dark-red-font { /*pomegranate*/
+    color: #c0392b;
+}
+.white-font { /*clouds*/
+    color: #ecf0f1;
+}
+.dark-white-font { /*silver*/
+    color: #bdc3c7;
+}
+.grey-font { /*concrete*/
+    color: #95a5a6;
+}
+.dark-grey-font { /*asbestos*/
+    color: #7f8c8d;
+}

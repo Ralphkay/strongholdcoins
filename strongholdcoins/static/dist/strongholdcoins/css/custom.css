@@ -1,0 +1,145 @@
+/*a.nav-link {*/
+    /*font-size: 16px !important;*/
+/*}*/
+
+/*#main-controls{*/
+	/*margin:20px 0;*/
+/*}*/
+
+/*.app-header.navbar .navbar-brand {*/
+    /*display: inline-block;*/
+    /*width: 155px;*/
+    /*max-height: 55px;*/
+    /*padding: 0.5rem 1rem;*/
+    /*margin-right: 0;*/
+    /*background-color: #fff;*/
+    /*background-image: none;*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: center center;*/
+    /*background-size: 70px auto;*/
+    /*border-bottom: 1px solid #c2cfd6;*/
+/*}*/
+
+/*.sidebar,.sidebar-nav .nav ul {*/
+    /*padding: 0;*/
+    /*overflow: hidden;*/
+    /*color: #fff;*/
+    /*background: #103866 !important; */
+/*}*/
+
+/*.bg-primary{*/
+	  /*background: #1565C0 !important;*/
+	  /*color: white;*/
+/*}*/
+
+/*.sidebar .nav .nav-item .nav-link.active, .sidebar .nav .nav-item .navbar .active.dropdown-toggle, .navbar .sidebar .nav .nav-item .active.dropdown-toggle {*/
+    /*color: #fff;*/
+    /*background: #103866;*/
+/*}*/
+
+
+.main{
+    margin-top:50px;
+}
+.app-body {
+    background: #29363d;
+}
+
+
+.sidebar {
+    padding: 0;
+    overflow: hidden;
+    color: #fff;
+    background: #33444c;
+}
+
+.bg-too-dark{
+    background: #151b1e !important;
+}
+
+.border-pher{
+    border: 1px solid #6f6b6b !important
+}
+
+footer.app-footer {
+    height: auto;
+    margin-bottom: -100px !important;
+    background: #29363d;
+    border-top: 0;
+    color: white;
+}
+
+.pp{
+    margin:10px 0;
+}
+.pp img{
+    vertical-align: middle;
+    border-style: none;
+    border-radius: 50%;
+    /*margin:5px;*/
+    width: 165px;
+}
+
+.hidden{
+    display: none;
+}
+
+.jumbotron {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    color: white !important;
+    background-color: #31708f;
+    font-family: -webkit-body;
+}
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background-color: #fff;
+     border: 0 solid #ddd !important;
+}
+
+.st-navbar ul li a {
+    text-transform: uppercase;
+    font-weight: 300;
+    padding: 0;
+    margin: 14px;
+    font-size: 12px !important;
+}
+
+
+
+
+.carousel-caption.container {
+    background: rgba(0,0,0,0.5);
+    min-height:200px !important;
+    padding:50px 0;
+    text-align: center;
+}
+.carousel-caption{
+    margin-top:-220px;
+}
+
+div.lead.col-md-6.login {
+    padding: 20px;
+    background:#3f51b5;
+}
+
+div.lead.col-md-6.signup {
+    background:#03a9f4;
+    padding: 20px;
+}
+
+#services {
+    background-color: #2196F3;
+    padding-top: 130px;
+    color: white;
+    padding-bottom: 120px;
+}
+
+div#history_length {
+    color: white;
+}

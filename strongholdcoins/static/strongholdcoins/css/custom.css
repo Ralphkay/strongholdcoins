@@ -1,0 +1,42 @@
+a.nav-link {
+    font-size: 16px !important;
+}
+
+#main-controls{
+	margin:20px 0;
+}
+
+.app-header.navbar .navbar-brand {
+    display: inline-block;
+    width: 155px;
+    max-height: 55px;
+    padding: 0.5rem 1rem;
+    margin-right: 0;
+    background-color: #fff;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 70px auto;
+    border-bottom: 1px solid #c2cfd6;
+}
+
+.sidebar,.sidebar-nav .nav ul {
+    padding: 0;
+    overflow: hidden;
+    color: #fff;
+    background: #103866 !important; 
+}
+
+.bg-primary{
+	  background: #1565C0 !important;
+	  color: white;
+}
+
+.sidebar .nav .nav-item .nav-link.active, .sidebar .nav .nav-item .navbar .active.dropdown-toggle, .navbar .sidebar .nav .nav-item .active.dropdown-toggle {
+    color: #fff;
+    background: #103866;
+}
+
+table.dataTable tbody tr {
+    background-color: #000000 !important;
+}

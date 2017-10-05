@@ -1,0 +1,22 @@
+<!-- this format is not compulsory, you can have HTML that suits your project -->
+
+
+<div class="col-md-4" >
+    <div data-nf-id="{{ notification.id }}"
+class="notification alert alert-primary {{ notification.read|yesno:'read,unread' }}">
+    <a href="{{ notification.actor_url }}">{{ request.user.profile.username }}</a> {{ notification.verb }}
+    <span class="timesince">{{ notification.created|timesince }} ago</span>
+HI
+    <button data-id="{{ notification.id }}" class="mark-notification"
+        data-mark-action="{{ notification.read|yesno:'unread,read' }}"
+        data-toggle-text="Mark as {{ notification.read|yesno:_('read,unread') }}">
+
+        Mark as {{ notification.read|yesno:'unread,read' }}
+
+    </button>
+    <button class="delete-notification btn btn-danger btn-sm" data-id="{{ notification.id }}">X</button>
+</div>
+
+</div>
+
+

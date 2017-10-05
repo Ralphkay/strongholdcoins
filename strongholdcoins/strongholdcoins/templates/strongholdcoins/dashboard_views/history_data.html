@@ -1,0 +1,40 @@
+{%load humanize %}
+<table class="table table-striped table-inverse table-sm table-hover table-responsive" id="history">
+
+    <thead class="">
+        <tr>
+            <th>Date Created</th>
+            <th>Reference</th>
+            <th>Wallet Address</th>
+            <th>Payment Method</th>
+            <th>Bank</th>
+            <th>Bank Account</th>
+            <th>Bank #</th>
+            <th>MM Vendor</th>
+            <th>MM Number</th>
+            <th>Order Status</th>
+        </tr>
+    </thead>
+
+    <tbody class="">
+        {% for d in history %}
+        <tr>
+            <td>{{d.created_on | date:"d-m-Y:H:i"}}</td>
+            <td><a href="{% url 'editOrder' user_pk=request.user.id order_pk=d.id %}">{{d.order_id}}</a></td>
+            <td>{{d.wallet_address}}</td>
+            <td>{% if d.payment_method == "AMM" %} Mobile Money {% else %} Bank Transfer {% endif %}</td>
+            <td>{% if d.bank == "" %} ------- {% else %} {{d.bank}} {% endif %}</td>
+            <td>{% if d.bank_account_name == "" %} ------- {% else %} {{d.bank_account_name}} {% endif %} </td>
+            <td>{{d.bank_account_number}}</td>
+            <td>{{d.mobile_money_vendor}}</td>
+            <td>{{d.mobile_money_number}}</td>
+            <td>
+                {% if d.order_status == "AW" %} <span class="btn btn-sm btn-warning">Pending Payment</span> {% elif d.order_status == "AP" %} <span class="btn btn-sm btn-success">Approved Transaction</span> {% endif %}
+
+
+            </td>
+        </tr>
+        {% endfor %}
+
+    </tbody>
+</table>

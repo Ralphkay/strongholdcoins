@@ -1,0 +1,23 @@
+{% load humanize %}
+
+<div class="ui green message">
+    <div class="header">
+        <h4>Recent Activity</h4>
+    </div>
+
+
+    <div class="ui divided list">
+        {% if orders.count == 0 %} You do not have any activity. {% else %} {% for order in orders %}
+        <div class="item">
+            <i class="large sticky teal ui note middle aligned icon"></i>
+            <div class="content">
+                <a class="header">{{order.order_id}}</a>
+                <div class="description">{{order.created_on | naturaltime}}</div>
+            </div>
+        </div>
+
+        {% endfor %} {% endif %}
+    </div>
+
+
+</div>

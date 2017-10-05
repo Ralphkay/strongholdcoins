@@ -1,0 +1,32 @@
+{% load i18n %}
+{% load account_tags %}
+
+
+
+<ul class="nav navbar-nav pull-right">
+
+    <li><a href="#tab_one">Home</a></li>
+                                            <li><a href="#tab_two">About</a></li>
+                                            <li><a href="#tab_two">How-it-works</a></li>
+                                            <li><a href="#tab_two">Contact us</a></li>
+    {% if request.user.is_authenticated %}
+        <p class="navbar-text">
+            <i class="fa fa-user"></i> {% user_display request.user %}
+        </p>
+        <li>
+            <a href="{% url 'dashboard' %}"><i class="fa fa-cog"></i> {% trans "Dashboard" %}</a>
+        </li>
+        <li>
+            <a id="account_logout" href="{% url 'account_logout' %}"><i class="fa fa-power-off"></i> {% trans "Log out" %}</a>
+        </li>
+    {% else %}
+        <li><a href="{% url 'account_login' %}">{% trans "Log in" %}</a></li>
+        {% if ACCOUNT_OPEN_SIGNUP %}
+            <li><a href="{% url 'account_signup' %}">{% trans "Sign up" %}</a></li>
+        {% endif %}
+    {% endif %}
+</ul>
+
+<form id="accountLogOutForm" style="display: none;" action="{% url 'account_logout' %}" method="POST">
+    {% csrf_token %}
+</form>

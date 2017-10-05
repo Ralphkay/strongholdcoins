@@ -1,0 +1,59 @@
+{% load widget_tweaks %}
+
+<form action="" method="POST" class=" ui form attached fluid segment">
+
+    {% csrf_token %}
+    <div class="field">
+        <input type="hidden" id="id_order_id" name="order_id" value="">
+    </div>
+    <div class="field">
+        <label>{{form.wallet_address.label}}</label> {% render_field form.wallet_address placeholder="Enter your wallet address" required="required" %}
+    </div>
+
+    <div class="fields four ">
+        <div class="field">
+            <label>{{form.order_amount.label}}</label> {{form.order_amount | attr:'required'}}
+        </div>
+
+        <div class="field">
+            <label>{{form.order_amount.label}}</label> {{form.order_amount | attr:'required'}}
+        </div>
+        <div class="field">
+            <label>{{form.action.label}}</label> {{form.action | attr:'required'}}
+        </div>
+        <div class="field ">
+            <label>{{form.payment_method.label}}</label> {{form.payment_method | attr:'required'}}
+        </div>
+    </div>
+
+
+    <div id="mobilemoneyForm">
+        <div class="field ">
+            <label>{{form.mobile_money_vendor.label}}</label> {{form.mobile_money_vendor}}
+        </div>
+
+        <div class="field ">
+            <label>{{form.mobile_money_number.label}}</label> {{form.mobile_money_number}}
+        </div>
+    </div>
+
+    <div id="bankForm">
+        <div class="field">
+            <label>{{form.bank.label}}</label> {{form.bank}}
+        </div>
+        <div class="field ">
+            <label>{{form.bank_account_name.label}}</label> {{form.bank_account_name}}
+        </div>
+
+        <div class="field ">
+            <label>{{form.bank_account_number.label}}</label> {{form.bank_account_number}}
+        </div>
+    </div>
+
+    <div class="field">
+        <input type="hidden" name="user_id" value="{{ request.user.id }}">
+    </div>
+    <div class="field">
+        <button type="submit" class="ui button teal">Make Order</button>
+    </div>
+</form>

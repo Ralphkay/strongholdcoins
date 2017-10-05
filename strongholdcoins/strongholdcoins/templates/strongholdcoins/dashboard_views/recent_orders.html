@@ -1,0 +1,23 @@
+{% load humanize %}
+
+<div class="ui violet segment large">
+    <div class="header">
+        <h4>Recent Orders</h4>
+    </div>
+
+
+    <div class="ui relaxed divided list">
+        {% if orders.count == 0 %} You don not have any pending orders. {% else %} {% for order in orders %}
+        <div class="item">
+            <i class="large sticky teal ui note middle aligned icon"></i>
+            <div class="content">
+                <a class="header">{{order.order_id}}</a>
+                <div class="description">{{order.created_on | naturaltime}}</div>
+            </div>
+        </div>
+
+        {% endfor %} {% endif %}
+    </div>
+
+
+</div>

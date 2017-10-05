@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        pinax=pcli:main
+    

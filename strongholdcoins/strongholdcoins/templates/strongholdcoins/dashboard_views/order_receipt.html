@@ -1,0 +1,86 @@
+{% load humanize %}
+
+
+
+
+        <div class="list-group card text-white border-pher bg-too-dark">
+            <h6 class="list-group-item-dark bg-too-dark text-white list-group-item">Order Receipt</h6>
+             {% for order in new_order %}
+            <div class="list-group-item bg-too-dark border-pher">
+                {# <i class="large middle aligned icon"></i> #}
+                <div class="content">
+                    <a class="header">Reference Id</a>
+                    <div class="description">{{ order.order_id }}</div>
+                </div>
+            </div>
+
+            <div class="list-group-item bg-too-dark border-pher">
+                <i class="large google wallet middle aligned icon"></i>
+                <div class="content">
+                    <a class="header">Wallet Address</a>
+                    <div class="description"> {{order.wallet_address }}</div>
+                </div>
+            </div>
+
+
+
+            <div class="list-group-item bg-too-dark border-pher">
+                <i class="large money middle aligned icon"></i>
+                <div class="content">
+                    <a class="header">Order Amount</a>
+                    <div class="description">${{order.order_amount}}</div>
+                </div>
+            </div>
+
+
+            <div class="list-group-item bg-too-dark border-pher">
+                {# <i class="large exchange middle aligned icon"></i> #}
+                <div class="content">
+                    <a class="header">Order Action</a>
+                    <div class="description">{% if order.action == 'B' %} Buying {% elif order.action == 'S' %} Selling {% else %} Invest {% endif %}</div>
+                </div>
+            </div>
+            <div class="list-group-item bg-too-dark border-pher">
+
+                <div class="content">
+                    <a class="header">Payment Method</a>
+                    <div class="description">{% if order.payment_method == 'AMM' %} Mobile Money {% else %} Bank Transfer {% endif %}</div>
+                    <p>{{order.bank}}</p>
+                </div>
+            </div>
+
+            <div class="list-group-item bg-too-dark border-pher">
+                <i class="large wait middle aligned icon"></i>
+                <div class="content">
+                    <a class="header">Created</a>
+                    <div class="description">{{order.created_on | naturaltime }}</div>
+                </div>
+            </div>
+
+            <div class="list-group-item bg-too-dark border-pher">
+                <i class="large wait middle aligned icon"></i>
+                <div class="content">
+                    <a class="header">Updated</a>
+                    <div class="description">{{order.updated_on | naturaltime }}</div>
+                </div>
+            </div>
+            <hr>
+            <div class="list-group-item bg-too-dark border-pher">
+                <i class="large life ring middle aligned icon"></i>
+                <div class="content">
+                    <div class="description">
+                    {# dashboard/user/(?P<user_pk>\d+)/order/(?P<order_pk>\d+)/edit #}
+                        <a href="{% url 'editOrder' user_pk=request.user.id order_pk=order.id %}" class="btn btn-sm btn-primary"><i class="icon ui edit"></i> Edit</a>
+                        <a href="" class="btn btn-sm btn-success"> Print</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        {% endfor %}
+
+
+
+
