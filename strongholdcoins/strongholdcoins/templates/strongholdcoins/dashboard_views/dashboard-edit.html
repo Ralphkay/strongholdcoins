@@ -1,0 +1,135 @@
+{% extends 'strongholdcoins/dashboard_views/base_layout.html' %}{% load humanize %}
+
+
+{% block content %}
+
+<main class="main">
+
+
+    <div class="container-fluid">
+        <h3 class="lead text-white" style="padding-top: 20px">Dashboard Panel</h3>
+        <div class="row" id="main-controls">
+            <div class="row">
+
+                <div class="col-6">
+
+                    <canvas class="container" id="myChart" width="740" height="250"></canvas>
+
+                </div>
+
+                <div class="col-6">
+                    <canvas id="pie-chart" width="800" height="250"></canvas>
+                </div>
+            </div>
+            <hr/>
+            <h3 class="lead text-white" style="padding: 20px">Action Controls</h3>
+          <div class="row">
+
+                <div class="col-4">
+
+                <div class="card bg-dark text-white border-info">
+                    <h4 class="card-header text-white bg-black text-white">
+                        Featured
+                    </h4>
+                    <div class="card-body">
+                        <h4 class="card-title">Buy. Sell. Invest</h4>
+                        <p class="card-text">To buy, sell or invest please use the form below. You can use the Bit
+                            calculator to know our rate</p>
+                        {% include "strongholdcoins/dashboard_views/order-form.html" %}
+                    </div>
+                </div>
+                <!-- end of order/edit form -->
+            </div>
+            <div class="col-3">
+                <div class="card bg-dark text-white border-success">
+                    <div class="card-header text-success">Bit Calculator</div>
+                    <div class="card-body">
+                        {% include "strongholdcoins/dashboard_views/calculator.html" %}
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="col-md-3">
+
+                <div class="card text-white bg-dark border-primary">
+
+                    <div class="card-header">Bitcoin Rates</div>
+                    <div class="card-body">
+                        <ul class="newsticker1" style="list-style: none;margin: 0;padding: 0;"></ul>
+                    </div>
+
+                </div>
+
+    {% for order in new_order %}
+                <div class="card text-white bg-dark border-info" id="orderReceipt">
+
+
+
+                    <div class="card-header">Order Receipt
+                        <small>({{order.created_on|naturaltime }})</small>
+                    </div>
+
+                    <div class="card-body">
+                        <h6>REFERENCE ID</h6>
+                        <p>Use the reference id when making payment</p>
+                        <div class="display-4 text-success">{{ order.order_id }}</div>
+                        <div class="description"><strong>Wallet</strong>
+                            <small>{{order.wallet_address }}</small>
+                        </div>
+                        <div class="description"><strong>Amount</strong> GHC {{order.order_amount}}</div>
+                        <div class="description"><strong>Transaction Action</strong> {% if order.action == 'B' %} Buying {% elif order.action == 'S' %} Selling {% else %} Invest {% endif %}
+                        </div>
+                        <div class="description"><strong>Payment Method</strong> {% if order.payment_method == 'AMM' %}
+                            Mobile Money {% else %} Bank Transfer {% endif %}
+                        </div>
+                        <div class="description"><strong>Crypto Currency: </strong>{{order.crypto_currency}}
+                            ({{order.amount_of_coins}} coins)
+                        </div>
+                        <div class="description"><strong>Commission Fee: </strong>GHC{{order.commission_fee}}
+
+                        </div>
+                        <div class="description"><strong>Created on :</strong>{{order.created_on }}</div>
+                        <div class="description"><strong>Updated on :</strong>{{order.updated_on }}</div>
+                        <hr>
+                        <div class="description">
+
+                            <a href="{% url 'editOrder' user_pk=request.user.id order_pk=order.id %}"
+                               class="btn btn-sm btn-primary"><i class="icon ui edit"></i> Edit</a>
+                            <a href="" class="btn btn-sm btn-success printReceipt"> Print</a>
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+
+{% endfor %}
+            </div>
+
+            <div class="col-md-2">
+                <div id="bitcoin_widget_container"></div>
+
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- historical data table -->
+
+
+        <div class="row">
+            <h5 class="lead text-white"><i class="fa fa-history "></i> Transaction History</h5>
+        {% include "strongholdcoins/dashboard_views/history_data.html" %}
+        </div>
+
+
+    </div>
+
+
+</main>
+{% endblock %}

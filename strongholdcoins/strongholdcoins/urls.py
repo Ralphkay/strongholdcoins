@@ -11,8 +11,8 @@ from . import views
 
 urlpatterns = [
 
-
-	url(r'^dashboard/user/(?P<user_pk>\d+)/order/(?P<order_pk>\d+)/edit',views.editOrder,name="editOrder"),
+    url(r'^dashboard/user/(?P<user_pk>\d+)/order/(?P<order_pk>\d+)/edit',views.editOrder,name="editOrder"),
+    url(r'^dashboard/order/(?P<order_pk>\d+)/delete',views.deleteOrder,name="deleteOrder"),
     url(r'^dashboard/user/profile/$',views.profile_view,name="userprofile"),
     # url(r'^dashboard/user/account/(?P<user_pk>\d+)',views.account_view,name="useraccount"),
     url(r'^dashboard/$',views.dashboard,name="dashboard"),

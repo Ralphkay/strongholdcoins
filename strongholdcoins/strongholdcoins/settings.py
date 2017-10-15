@@ -143,6 +143,9 @@ INSTALLED_APPS = [
 
     # custom
     "widget_tweaks",
+    'easy_thumbnails',
+    'filer',
+    'mptt',
 
 
 
@@ -205,7 +208,7 @@ HOOKSET = "strongholdcoins.hooks.AccountDefaultHookSet"
 
 
 # Add to your settings file
-CONTENT_TYPES = ['pdf','doc']
+CONTENT_TYPES = ['pdf','doc','jpeg','jpg']
 # 2.5MB - 2621440
 # 5MB - 5242880
 # 10MB - 10485760

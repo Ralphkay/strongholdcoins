@@ -20,7 +20,8 @@
         {% for d in history %}
         <tr>
             <td>{{d.created_on | date:"d-m-Y:H:i"}}</td>
-            <td><a href="{% url 'editOrder' user_pk=request.user.id order_pk=d.id %}">{{d.order_id}}</a></td>
+            <!--<td><a href="{% url 'editOrder' user_pk=request.user.id order_pk=d.id %}">{{d.order_id}}</a></td>-->
+            <td>{{d.order_id}}</td>
             <td>{{d.wallet_address}}</td>
             <td>{% if d.payment_method == "AMM" %} Mobile Money {% else %} Bank Transfer {% endif %}</td>
             <td>{% if d.bank == "" %} ------- {% else %} {{d.bank}} {% endif %}</td>

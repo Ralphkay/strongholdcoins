@@ -1,0 +1,80 @@
+{% load widget_tweaks %}
+{{proth}}
+<form action="" method="POST" class=" form bg-dark" id="orderFormMain">
+
+{% include "strongholdcoins/dashboard_views/toast-messages.html"%}
+    {% csrf_token %}
+    <div class="field">
+        {% render_field form.order_id class+="form-control"  readonly="True" hidden="True"%}
+    </div>
+
+    <div class="field form-group bg-dark">
+        <label>{{form.wallet_address.label}}</label> {% render_field form.wallet_address  class+="text-white form-control bg-dark border-pher" placeholder="Enter your wallet address" required="required" autofocus="True" %}
+    </div>
+
+    <div class="form-row">
+ <label>{{form.crypto_currency.label}}</label>
+            {{form.crypto_currency | attr:'required' | add_class:"radio-inline cryptocoin"}}
+
+    </div>
+
+    <div class="form-row ">
+        <div class="col-md-4 form-group ">
+            <label>{{form.order_amount.label}} (GHC)</label>
+            {{form.order_amount | attr:'required' | add_class:"form-control bg-dark text-white border-pher"}}
+            {{form.amount_of_coins | attr:'hidden' | add_class:"form-control bg-dark text-white border-pher"}}
+
+            <input type="hidden" id="id_commission_fee" name="commission_fee" value="" class="form-control">
+
+        </div>
+
+ 
+        <div class="col-md-4 form-group ">
+            <label>{{form.action.label}}</label>
+            {{form.action | attr:'required'|add_class:"form-control text-white bg-dark text-white border-pher"}}
+        </div>
+        <div class="col-md-4 form-group ">
+            <label>{{form.payment_method.label}}</label>
+            {{form.payment_method |attr:'required'|add_class:"form-control bg-dark border-pher text-white"}}
+        </div>
+    </div>
+
+
+
+    <div id="bankForm" class="form-row">
+        <div class="field form-group  col-md-4">
+            <label>{{form.bank.label}}</label> {{form.bank |add_class:"form-control text-white bg-dark border-pher"}}
+        </div>
+        <div class="field form-group  col-md-4">
+            <label>{{form.bank_account_name.label}}</label> {{form.bank_account_name| add_class:"text-white form-control bg-dark border-pher"}}
+        </div>
+
+        <div class="field form-group  col-md-4">
+            <label>{{form.bank_account_number.label}}</label> {{form.bank_account_number | add_class:" text-white form-control bg-dark border-pher"}}
+        </div>
+    </div>
+
+
+
+    <div id="mobilemoneyForm" class="form-row">
+        <div class="field  form-group  col-md-6">
+            <label>{{form.mobile_money_vendor.label}}</label> {{form.mobile_money_vendor| add_class:"form-control text-white bg-dark border-pher"}}
+        </div>
+
+        <div class="field form-group  col-md-6">
+            <label>{{form.mobile_money_number.label}}</label> {{form.mobile_money_number| add_class:"form-control text-white bg-dark border-pher"}}
+        </div>
+    </div>
+
+    <div class="field">
+
+        <input type="hidden" name="user_id" value="{{ request.user.id }}">
+    </div>
+
+
+    <div class="field">
+        {% if request.path == pth %}
+        <button type="submit" class="btn btn-sm btn-primary">Update Order</button> {% else %}
+        <button type="submit" class="btn btn-sm btn-success text-white">Make Order</button> {% endif %}
+    </div>
+</form>

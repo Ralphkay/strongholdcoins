@@ -15,7 +15,7 @@
 	<link rel="stylesheet" href="{% static 'cluster/css/font-awesome.css' %}" />
 	<link rel="stylesheet" href="{% static 'cluster/css/style.css' %}" />
 	<link rel="stylesheet" href="{% static 'cluster/css/responsive.css' %}" />
-	<link rel="stylesheet" href="{% static 'strongholdcoins/css/custom.css' %}" />
+	<link rel="stylesheet" href="{% static 'strongholdcoins/css/custom-home.css' %}" />
 
 
 	<!-- Favicon -->
@@ -41,11 +41,6 @@
 			<div class="preload-placeholder"></div>
 		</div>
 	</div>
-	<!-- /PRELOADER -->
-
-
-	<!-- HEADER -->
-
 
     <header id="header">
 
@@ -65,7 +60,7 @@
 				    	<span class="icon-bar"></span>
 				    	<span class="icon-bar"></span>
 					</button>
-					<a class="logo" href="index.html"><img src="{% static 'strongholdcoins/img/logo.png' %} " alt=""></a>
+					<a class="logo" href="{% url "home" %}"><img src="{% static 'strongholdcoins/img/logo.png' %} " alt=""></a>
 				</div>
 
 				<div class="collapse navbar-collapse" id="st-navbar-collapse">
@@ -76,15 +71,14 @@
 				    	<li><a href="#how-it-works">How it works</a></li>
 				    	<li><a href="#contact">Contact</a></li>
                     		    {% if request.user.is_authenticated %}
-        <li>
+						   <li>
             <a href=""><i class="fa fa-user"></i> {{ request.user.profile.first_name }}</a>
         </li>
+
         <li>
             <a href="{% url 'dashboard' %}"><i class="fa fa-cog"></i> {% trans "Dashboard" %}</a>
         </li>
-        <li>
-            <a id="account_logout" href="{% url 'account_logout' %}"><i class="fa fa-power-off"></i> {% trans "Log out" %}</a>
-        </li>
+
     {% else %}
         <li><a href="{% url 'account_login' %}">{% trans "Log in" %}</a></li>
         {% if ACCOUNT_OPEN_SIGNUP %}
@@ -106,31 +100,103 @@
 
 		<div id="home-carousel" class="carousel slide" data-ride="carousel">
 			<div class="carousel-inner">
-				<div class="item active" style="background-image: url({%static 'cluster/images/slider/bitcoin-bn.jpg'%})">
+				<div class="item active" style="background-image: url({%static 'cluster/images/4.jpg'%});">
 					<div class="carousel-caption container">
 						<div class="row">
 								<div class="">
-								<h1>Join the Bit Train</h1>
-								<h2>Strongholdcoins</h2>
+								<h1 class="display-4">Join the Crypto Train</h1>
+
+									<div class="container" style="padding: 20px;">
+										<h5 class=" container display-3 lead" >
+									Do you want to become part of the world most evolutionary currency? Strongholdcoins
+                                            gets
+                                            you
+                                            started with ease.
+									</h5>
+									</div>
+                                           {% url "account_login" as login_url %}
+            {% url "account_signup" as signup_url %}
+									<a href="{{ signup_url }}" class="btn btn-success btn-lg">GET STARTED TODAY</a>
+									<!--<div class="text-white">-->
+										<!--<a href="" class="text-white" style="color: #fff;">Log in</a> | <a href="" class="text-white" style="color: #fff;">Sign-->
+										<!--up</a>-->
+									<!--</div>-->
+
 								 {% if not user.is_authenticated %}
             {% url "account_login" as login_url %}
             {% url "account_signup" as signup_url %}
             <p class="lead">You can <a href="{{ login_url }}" class="text-white" style="color:white">Log In</a> or <a href="{{ signup_url }}" class="" style="color:white">Sign Up</a> to become a member</p>
 
-<div class="lead col-md-6 login">
-	<h4>Become a member</h4>
-										Join the family of cryptoholders and start earning your dreams money. We are
-    a solid organisation that enables you to buy, sell and even invest in cryptocoins on any wallet you may own. Sign
-    up and become part of us today!
-									</div>
 
-									<div class="lead col-md-6 signup">
-										<h4>Know more about cryptocurrency</h4>
-										Cryptocurrencies is the new economy today. From bitcoins to lietcoins to the
-                                        latest of them all. We organise serminars and events that help to educate you
-                                        on the know-how of cryptocurrencies. We have the experts in the markets.
-									</div>
             {% endif %}
+
+
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item" style="background-image: url({%static 'cluster/images/2.jpg'%});">
+					<div class="carousel-caption container">
+						<div class="row">
+								<div class="">
+								<h1 class="display-4" STYLE="font-weight: 500;">1.25% FLAT RATE PER TRANSACTION</h1>
+
+									<div class="container" style="padding: 20px;">
+										<h5 class=" container display-3 lead" >
+									BUY, SELL OR INVEST AT A FLAT RATE. <br>
+                                            Enjoy transaction with ease and simplicity.
+									</h5>
+									</div>
+                                           {% url "account_login" as login_url %}
+            {% url "account_signup" as signup_url %}
+									<a href="{{ signup_url }}" class="btn btn-success btn-lg">GET STARTED TODAY</a>
+									<!--<div class="text-white">-->
+										<!--<a href="" class="text-white" style="color: #fff;">Log in</a> | <a href="" class="text-white" style="color: #fff;">Sign-->
+										<!--up</a>-->
+									<!--</div>-->
+
+								 {% if not user.is_authenticated %}
+            {% url "account_login" as login_url %}
+            {% url "account_signup" as signup_url %}
+            <p class="lead">You can <a href="{{ login_url }}" class="text-white" style="color:white">Log In</a> or <a href="{{ signup_url }}" class="" style="color:white">Sign Up</a> to become a member</p>
+
+
+            {% endif %}
+
+
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item" style="background-image: url({%static 'cluster/images/3.jpg'%});">
+					<div class="carousel-caption container">
+						<div class="row">
+								<div class="">
+								<h1 class="display-4" STYLE="font-weight: 500;">1.25% FLAT RATE PER TRANSACTION</h1>
+
+									<div class="container" style="padding: 20px;">
+										<h5 class=" container display-3 lead" >BUY, SELL OR INVEST AT A FLAT RATE. <br>
+                                            Enjoy transaction with ease and simplicity.
+									</h5>
+									</div>
+                                           {% url "account_login" as login_url %}
+            {% url "account_signup" as signup_url %}
+									<a href="{{ signup_url }}" class="btn btn-success btn-lg">GET STARTED TODAY</a>
+
+
+								 {% if not user.is_authenticated %}
+            {% url "account_login" as login_url %}
+            {% url "account_signup" as signup_url %}
+            <p class="lead">You can <a href="{{ login_url }}" class="text-white" style="color:white">Log In</a> or <a href="{{ signup_url }}" class="" style="color:white">Sign Up</a> to become a member</p>
+
+
+            {% endif %}
+
+
 
 
 							</div>
@@ -145,6 +211,63 @@
 		</div> <!--/#home-carousel-->
     </section>
 	<!-- /SLIDER -->
+<section id="crypto-calculator">
+		<div class="container">
+			<div class="row">
+				<p class="lead container text-center">We place more value for your money, we have a
+                   <strong>1.25%</strong> flat rate for both selling, buying and investing! </p>
+				<form action="">
+                    	<div class="col-sm-6 col-md-3">
+					<div class="fun-fact text-center">
+						<h6>Crypto Currency(USD)</h6>
+							<h3>
+								<select name="cryptoCurrency" id="cryptoCurrency" class="form-control">
+								<option>Select Currency</option>
+									<option value="Bitcoin">Bitcoin</option>
+									<option value="Ethereum">Ethereum</option>
+									<option value="Litecoin">Litecoin</option>
+							</select>
+
+							</h3>
+					</div>
+				</div>
+
+
+
+					<div class="col-sm-6 col-md-2">
+					<div class="fun-fact text-center">
+						<h6>Amount(USD)</h6>
+						<h3><input type="number" name="amount" id="amount" class="form-control"></h3>
+					</div>
+				</div>
+
+
+				<div class="col-sm-6 col-md-2">
+					<div class="fun-fact text-center">
+						<h6>Coins</h6>
+						<h3><input type="number" id="coins" readonly="readonly" name="coins" class="form-control"></h3>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-2">
+					<div class="fun-fact text-center">
+						<h6>Fee(GHC)</h6>
+						<h3><input type="number" readonly="readonly" name="fee" id="fee" class="form-control"></h3>
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-md-3">
+					<div class="fun-fact text-center">
+						<h6>Amount to pay(GHC)</h6>
+						<h3><input type="number" readonly="readonly" id="amount2pay" name="amount2Pay"
+                                   class="form-control"></h3>
+					</div>
+				</div>
+				</form>
+			</div>
+		</div>
+	</section>
+
+
 
 <!--About us-->
 
@@ -153,7 +276,7 @@
 			<div class="row">
 				<div class="col-md-12">
 
-					<hr>
+
 				</div>
 	<div class="col-md-6">
 					<img src="{% static 'strongholdcoins/img/2bit.png' %}" class="img-responsive" alt="">
@@ -166,8 +289,15 @@
 						<span class="st-border"></span>
 					</div>
 								<p>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi at commodi dicta et ex exercitationem impedit iste non quam voluptatum. At facere fugit ipsum minima, officia reiciendis sint velit voluptatum.
+									StrongHoldCoins is a high-level vendor of cryptocurrencies based in Ghana. We are
+                                    focused on helping both new and old customers who would like to trade in
+                                    cryptocurrencies.
 								</p>
+                                <p>
+                                    What makes me unique is our flat rate we offer on all kinds of transactions; be
+                                    it selling, buying or investing. Topping our uniqueness is our comfortable
+                                    customer experience.
+                                </p>
 
 
 
@@ -180,7 +310,7 @@
 
 
 			</div>
-			<hr>
+
 		</div>
 
 	</section>
@@ -194,39 +324,46 @@
 						<h1>How-it-Works</h1>
 						<span class="st-border"></span>
 					</div>
-					<hr>
+
+
+
 				</div>
 
 				<div class="col-md-6">
-							<div class="list-group" style="margin-top: 40px">
-		  <a href="#" class="list-group-item ">
-			<h4 class="list-group-item-heading text-primary"><i class="glyphicon glyphicon-plus"></i> List group item
-				heading</h4>
-			<p class="list-group-item-text">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias commodi dolores, facilis mollitia perferendis praesentium recusandae reiciendis saepe voluptatibus. Animi architecto blanditiis doloremque ducimus exercitationem facilis modi obcaecati quos veritatis?
-			</p>
-		  </a>
+                <h5>
+                <i class="fa fa-check-circle fa-1x"></i>
+                    Create an account.
+                </h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at autem cumque dolorem dolores eos
+                        fugit harum impedit incidunt.</p>
 
-								<a href="#" class="list-group-item">
-			<h4 class="list-group-item-heading">List group item heading</h4>
-			<p class="list-group-item-text">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias commodi dolores, facilis mollitia perferendis praesentium recusandae reiciendis saepe voluptatibus. Animi architecto blanditiis doloremque ducimus exercitationem facilis modi obcaecati quos veritatis?
-			</p>
-		  </a>
+                     <h5>
+                <i class="fa fa-check-circle fa-1x"></i>
+                    Calculate your transaction amount.
+                </h5>
+                    <p>On the dashboard, you will find a calculator to make your calculations. It will give you an
+                        idea as to how much you are to pay and how much the transaction fee will be.</p>
+
+                     <h5>
+                <i class="fa fa-check-circle fa-1x"></i>
+                    Make your order.
+                </h5>
+                    <p>Enter your transaction amoun using the order control panel and make your order. Make sure you
+                         choose your payment method.</p>
+
+                     <h5>
+                <i class="fa fa-check-circle fa-1x"></i>
+                    Make your payment
+                </h5>
+                    <p>
+                        Make your payment using the bank transfer or the mobile money to confirm order.
+                    </p>
+
+		        </div>
 
 
 
-								<a href="#" class="list-group-item ">
-			<h4 class="list-group-item-heading">List group item heading</h4>
-			<p class="list-group-item-text">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias commodi dolores, facilis mollitia perferendis praesentium recusandae reiciendis saepe voluptatibus. Animi architecto blanditiis doloremque ducimus exercitationem facilis modi obcaecati quos veritatis?
-			</p>
-		  </a>
-		</div>
 
-
-
-				</div>
 				
 				<div class="col-md-6">
 					<img src="{% static 'strongholdcoins/img/topb.png' %}" class="img-responsive" alt="">
@@ -243,23 +380,23 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="section-title">
-						<h1>What we do</h1>
+						<h1>Why Choose Us</h1>
 						<span class="st-border"></span>
 					</div>
 				</div>
 
 				<div class="col-md-4 col-sm-6 st-service">
-					<h2><i class="fa fa-desktop"></i>Buy</h2>
+					<h2><i class="fa fa-desktop"></i>Quick Transactions</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta libero autem, magni veritatis, optio dolor.</p>
 				</div>
 
 				<div class="col-md-4 col-sm-6 st-service">
-					<h2><i class="fa fa-cogs"></i>Sell</h2>
+					<h2><i class="fa fa-cogs"></i>Live Support</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta libero autem, magni veritatis, optio dolor.</p>
 				</div>
 
 				<div class="col-md-4 col-sm-6 st-service">
-					<h2><i class="fa fa-code"></i>Invest</h2>
+					<h2><i class="fa fa-code"></i>Comfortable Trading</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta libero autem, magni veritatis, optio dolor.</p>
 				</div>
 
@@ -269,12 +406,12 @@
 				</div>
 
 				<div class="col-md-4 col-sm-6 st-service">
-					<h2><i class="fa fa-life-ring"></i>Crypto Support</h2>
+					<h2><i class="fa fa-life-ring"></i>Smart Platform</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta libero autem, magni veritatis, optio dolor.</p>
 				</div>
 
 				<div class="col-md-4 col-sm-6 st-service">
-					<h2><i class="fa fa-weixin"></i> Live Support</h2>
+					<h2><i class="fa fa-weixin"></i>Best Customer Experience</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta libero autem, magni veritatis, optio dolor.</p>
 				</div>
 			</div>
@@ -330,38 +467,38 @@
 
 
 	<!-- FUN FACTS -->
-	<section id="fun-facts">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-6 col-md-3">
-					<div class="fun-fact text-center">
-						<h3><i class="fa fa-thumbs-o-up"></i> <span class="st-counter">365</span></h3>
-						<p>Happy Clients</p>
-					</div>
-				</div>
+	<!--<section id="fun-facts">-->
+		<!--<div class="container">-->
+			<!--<div class="row">-->
+				<!--<div class="col-sm-6 col-md-3">-->
+					<!--<div class="fun-fact text-center">-->
+						<!--<h3><i class="fa fa-thumbs-o-up"></i> <span class="st-counter">365</span></h3>-->
+						<!--<p>Happy Clients</p>-->
+					<!--</div>-->
+				<!--</div>-->
 
-				<div class="col-sm-6 col-md-3">
-					<div class="fun-fact text-center">
-						<h3><i class="fa fa-briefcase fa-6"></i> <span class="st-counter">73987</span></h3>
-						<p>Completed Projects</p>
-					</div>
-				</div>
+				<!--<div class="col-sm-6 col-md-3">-->
+					<!--<div class="fun-fact text-center">-->
+						<!--<h3><i class="fa fa-briefcase fa-6"></i> <span class="st-counter">73987</span></h3>-->
+						<!--<p>Completed Projects</p>-->
+					<!--</div>-->
+				<!--</div>-->
 
-				<div class="col-sm-6 col-md-3">
-					<div class="fun-fact text-center">
-						<h3><i class="fa fa-coffee"></i> <span class="st-counter">297345</span></h3>
-						<p>Cups of Coffee</p>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-3">
-					<div class="fun-fact text-center">
-						<h3><i class="fa fa-code"></i> <span class="st-counter">9823686</span></h3>
-						<p>Lines of Code</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+				<!--<div class="col-sm-6 col-md-3">-->
+					<!--<div class="fun-fact text-center">-->
+						<!--<h3><i class="fa fa-coffee"></i> <span class="st-counter">297345</span></h3>-->
+						<!--<p>Cups of Coffee</p>-->
+					<!--</div>-->
+				<!--</div>-->
+				<!--<div class="col-sm-6 col-md-3">-->
+					<!--<div class="fun-fact text-center">-->
+						<!--<h3><i class="fa fa-code"></i> <span class="st-counter">9823686</span></h3>-->
+						<!--<p>Lines of Code</p>-->
+					<!--</div>-->
+				<!--</div>-->
+			<!--</div>-->
+		<!--</div>-->
+	<!--</section>-->
 	<!-- /FUN FACTS -->
 
 
@@ -376,36 +513,15 @@
 					</div>
 				</div>
 				<div class="col-sm-4 contact-info">
-					<p class="contact-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae voluptatum dolorum, possimus tenetur pariatur officia, quo commodi autem doloribus vero rerum aspernatur quidem temporibus.</p>
+					<p class="contact-content">Contact us using the following address and social handles.</p>
 					<p class="st-address"><i class="fa fa-map-marker"></i> <strong>E71 8th Ave, New York NY 21001, US</strong></p>
 					<p class="st-phone"><i class="fa fa-mobile"></i> <strong>+00 123-456-789</strong></p>
 					<p class="st-email"><i class="fa fa-envelope-o"></i> <strong>email@yourdomain.com</strong></p>
-					<p class="st-website"><i class="fa fa-globe"></i> <strong>www.yourdomain.com</strong></p>
+					<p class="st-website"><i class="fa fa-globe"></i> <strong>www.strongholdcoins.com</strong></p>
 
 				</div>
 				<div class="col-sm-7 col-sm-offset-1">
-					<form action="php/send-contact.php" class="contact-form" name="contact-form" method="post">
-						<div class="row">
-							<div class="col-sm-6">
-								<input type="text" name="name" required="required" placeholder="Name*">
-							</div>
-							<div class="col-sm-6">
-								<input type="email" name="email" required="required" placeholder="Email*">
-							</div>
-							<div class="col-sm-6">
-								<input type="text" name="subject" placeholder="Subject">
-							</div>
-							<div class="col-sm-6">
-								<input type="text" name="website" placeholder="Website">
-							</div>
-							<div class="col-sm-12">
-								<textarea name="message" required="required" cols="30" rows="7" placeholder="Message*"></textarea>
-							</div>
-							<div class="col-sm-12">
-								<input type="submit" name="submit" value="Send Message" class="btn btn-send">
-							</div>
-						</div>
-					</form>
+
 				</div>
 			</div>
 		</div>
@@ -426,7 +542,7 @@
 				</div>
 				<!-- /SOCIAL ICONS -->
 				<div class="col-sm-6 col-sm-pull-6 copyright">
-					<p>&copy; 2015 <a href="">ShapedTheme</a>. All Rights Reserved.</p>
+					<p>&copy; 2017 <a href="">Strongholdcoins.com</a>. All Rights Reserved.</p>
 				</div>
 			</div>
 		</div>
@@ -444,17 +560,18 @@
 	<script type="text/javascript" src="{% static 'cluster/js/jquery.min.js'%}"></script><!-- jQuery -->
 	<script type="text/javascript" src="{% static 'cluster/js/bootstrap.min.js'%}"></script><!-- Bootstrap -->
 	<script type="text/javascript" src="{% static 'cluster/js/jquery.parallax.js'%}"></script><!-- Parallax -->
-	<script type="text/javascript" src="{% static 'cluster/js/smoothscroll.js'%}"></script><!-- Smooth Scroll -->
-	<script type="text/javascript" src="{% static 'cluster/js/masonry.pkgd.min.js'%}"></script><!-- masonry -->
-	<script type="text/javascript" src="{% static 'cluster/js/jquery.fitvids.js'%}"></script><!-- fitvids -->
-	<script type="text/javascript" src="{% static 'cluster/js/owl.carousel.min.js'%}"></script><!-- Owl-Carousel -->
-	<script type="text/javascript" src="{% static 'cluster/js/jquery.counterup.min.js'%}"></script><!-- CounterUp -->
-	<script type="text/javascript" src="{% static 'cluster/js/waypoints.min.js'%}"></script><!-- CounterUp -->
-	<script type="text/javascript" src="{% static 'cluster/js/jquery.isotope.min.js'%}"></script><!-- isotope -->
-	<script type="text/javascript" src="{% static 'cluster/js/jquery.magnific-popup.min.js'%}"></script><!-- magnific-popup -->
-	<script type="text/javascript" src="{% static 'cluster/js/scripts.js'%}"></script><!-- Scripts -->
+    <script type="text/javascript" src="{% static 'cluster/js/smoothscroll.js'%}"></script><!-- Smooth Scroll -->
+    <script type="text/javascript" src="{% static 'cluster/js/masonry.pkgd.min.js'%}"></script><!-- masonry -->
+    <script type="text/javascript" src="{% static 'cluster/js/jquery.fitvids.js'%}"></script><!-- fitvids -->
+    <script type="text/javascript" src="{% static 'cluster/js/owl.carousel.min.js'%}"></script><!-- Owl-Carousel -->
+    <script type="text/javascript" src="{% static 'cluster/js/jquery.counterup.min.js'%}"></script><!-- CounterUp -->
+    <script type="text/javascript" src="{% static 'cluster/js/waypoints.min.js'%}"></script><!-- CounterUp -->
+    <script type="text/javascript" src="{% static 'cluster/js/jquery.isotope.min.js'%}"></script><!-- isotope -->
+    <script type="text/javascript" src="{% static 'cluster/js/jquery.magnific-popup.min.js'%}"></script><!-- magnific-popup -->
+    <script type="text/javascript" src="{% static 'cluster/js/scripts.js'%}"></script><!-- Scripts -->
 
-<script src="{% static 'strongholdcoins/js/crypto.js' %}"></script>
+    <script src="{% static 'strongholdcoins/js/crypto.js' %}"></script>
+    <script src="{% static 'strongholdcoins/js/home-app.js' %}"></script>
 
 
 </body>

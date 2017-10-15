@@ -1,0 +1,191 @@
+
+.main{
+    margin-top:50px;
+}
+.app-body {
+    background: #1f4869;
+}
+
+
+.sidebar {
+    padding: 0;
+    overflow: hidden;
+    color: #fff;
+    background: #153752;
+}
+
+.bg-dark{
+    background-color: #1f4869 !important;
+}
+.bg-too-dark{
+    background: #151b1e !important;
+}
+
+.border-pher {
+    border: 1px solid #63c2de !important;
+}
+
+footer.app-footer {
+    height: auto;
+    margin-bottom: -100px !important;
+    background: #153752;
+    border-top: 0;
+    color: white;
+}
+
+.pp{
+    margin:10px 0;
+}
+.pp img{
+    vertical-align: middle;
+    border-style: none;
+    border-radius: 50%;
+    /*margin:5px;*/
+    width: 165px;
+}
+
+.hidden{
+    display: none;
+}
+
+.jumbotron {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    color: white !important;
+    background-color: #31708f;
+    font-family: -webkit-body;
+}
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background-color: #fff;
+     border: 0 solid #ddd !important;
+}
+
+.st-navbar ul li a {
+    text-transform: uppercase;
+    font-weight: 300;
+    padding: 0;
+    margin: 14px;
+    font-size: 12px !important;
+}
+
+
+.carousel-caption.container {
+    background: rgba(0,0,0,0.5);
+    max-height: 400px !important;
+    padding: 50px 0;
+    text-align: center;
+}
+.carousel-caption{
+    margin-top:-220px;
+}
+
+div.lead.col-md-6.login {
+    padding: 20px;
+    background:#3f51b5;
+}
+
+div.lead.col-md-6.signup {
+    background:#03a9f4;
+    padding: 20px;
+}
+
+#services {
+    background-color: #2196F3;
+    padding-top: 130px;
+    color: white;
+    padding-bottom: 120px;
+}
+
+div#history_length {
+    color: white;
+}
+
+ul#id_crypto_currency {
+    list-style: none;
+    display: inherit;
+}
+
+ul#id_crypto_currency li:first-child{
+    padding:0 15px;
+}
+
+ul#id_crypto_currency li{
+    padding:0 25px;
+}
+
+#dashboard-main{
+     display: none;
+ }
+
+body.app.header-fixed.sidebar-fixed.aside-menu-fixed.aside-menu-hidden {
+    overflow-x: hidden;
+}
+
+html.js.flexbox.canvas.canvastext.webgl.touch.geolocation.postmessage.websqldatabase.indexeddb.hashchange.history.draganddrop.websockets.rgba.hsla.multiplebgs.backgroundsize.borderimage.borderradius.boxshadow.textshadow.opacity.cssanimations.csscolumns.cssgradients.cssreflections.csstransforms.csstransforms3d.csstransitions.fontface.generatedcontent.video.audio.localstorage.sessionstorage.webworkers.applicationcache.svg.inlinesvg.smil.svgclippaths.gr__localhost {
+    background: #29363d !important;
+}
+
+header.app-header.navbar {
+    background: #153752;
+    color: white;
+    border: navajowhite;
+}
+
+.app-header.navbar .navbar-brand{
+    background: none !important;
+    border:none !important;
+}
+
+.sidebar .nav .nav-item .nav-link.active, .sidebar .nav .nav-item .navbar .active.dropdown-toggle, .navbar .sidebar .nav .nav-item .active.dropdown-toggle {
+    color: #fff;
+    background: #153752;
+}
+
+.card.bg-dark .card-header {
+    background-color: #153752;
+    border-color: #153752;
+}
+
+
+.table-inverse {
+    color: #e4e5e6;
+    background-color: #0d2940;
+}
+
+table.dataTable tbody tr.even {
+    background-color: #1f4869 !important;
+}
+
+section#crypto-calculator {
+    background: #2196f3;color:white;
+    padding:50px;
+}
+
+input.form-control {
+    border: none;
+}
+
+
+input[type="text"], input[type="number"],select[name="cryptoCurrency"] {
+    box-shadow: 1px 15px 15px rgba(0,0,0,0.2);
+}
+
+section#how-it-works {
+    background: rgba(158, 158, 158, 0.31);
+}
+
+#testimonial {
+    background-image: url(../images/2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+}

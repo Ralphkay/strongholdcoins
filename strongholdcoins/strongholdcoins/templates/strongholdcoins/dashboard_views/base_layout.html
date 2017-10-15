@@ -1,6 +1,6 @@
 {% load staticfiles %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="overflow-x: hidden !important;">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,16 +18,16 @@
         <!-- Main styles for this application -->
         <link href="{% static 'strongholdcoins/css/style.css' %}" rel="stylesheet">
         <link href="{% static 'strongholdcoins/css/flatcolors/colors.css' %}" rel="stylesheet">
-        <link href="{% static 'strongholdcoins/css/custom.css' %}" rel="stylesheet">
-        <!--<link href="{% static 'strongholdcoins/css/ui-table/table.min.css' %}" rel="stylesheet">-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
+        <link href="{% static 'strongholdcoins/css/custom.css' %}" rel="stylesheet">
 
         <script src="{% static 'strongholdcoins/res/js/modernizr.js'%}"></script>
 
         <style>
 
 table.dataTable tbody tr.even {
-    background-color: #000000 !important;
+    background-color: #0d2940 !important;
 }
 
             div#history_length {
@@ -38,73 +38,95 @@ table.dataTable tbody tr.even {
 }
         </style>
     </head>
-<!-- BODY options, add following classes to body to change options
-// Header options
-1. '.header-fixed'                  - Fixed Header
-// Sidebar options
-1. '.sidebar-fixed'                 - Fixed Sidebar
-2. '.sidebar-hidden'                - Hidden Sidebar
-3. '.sidebar-off-canvas'        - Off Canvas Sidebar
-4. '.sidebar-minimized'         - Minimized Sidebar (Only icons)
-5. '.sidebar-compact'             - Compact Sidebar
-// Aside options
-1. '.aside-menu-fixed'          - Fixed Aside Menu
-2. '.aside-menu-hidden'         - Hidden Aside Menu
-3. '.aside-menu-off-canvas' - Off Canvas Aside Menu
-// Breadcrumb options
-1. '.breadcrumb-fixed'          - Fixed Breadcrumb
-// Footer options
-1. '.footer-fixed'                  - Fixed footer
--->
+
     <body class="app header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden">
+
     <header class="app-header navbar">
         <button class="navbar-toggler mobile-sidebar-toggler d-lg-none mr-auto" type="button">☰</button>
-        <a class="navbar-brand" href="#">
-            <img src="{% static 'strongholdcoins/img/logo.png' %}" alt="">
+        <a class="navbar-brand" href="{% url "home" %}">
+            <img src="{% static 'strongholdcoins/img/logo-w.png' %}" class="img-responsive" alt="">
         </a>
         <div class="">{{timenow}}</div>
         <div class="navbar-right" style="margin-right:10px">
             <h6>{% if request.user.is_authenticated %}
-                Hello, {{ request.user.profile.first_name }}   <a href="/account/logout" class="btn btn-sm btn-danger"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a>{% endif %}</h6>
+                Hello,   {% if request.user.profile.first_name == "" %}
+              {{ request.user.email }}
+                {%else %}
+               {{ request.user.profile.full_name }}
+                {% endif %}   <a href="/account/logout" class="btn btn-sm btn-danger"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a>{% endif %}</h6>
 
         </div>
         <!-- <button class="navbar-toggler sidebar-minimizer d-md-down-none" type="button">☰</button> -->
     </header>
-    <div class="app-body">
-        {% include "strongholdcoins/dashboard_views/actions_menu.html" %}
+
+
+<!-- The overlay -->
+<div id="dashboard-loader" class="overlay" style="overflow: hidden">
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="" class="lead">Please wait...
+
+    </a>
+  <div class="bubblingG">
+	<span id="bubblingG_1">
+	</span>
+	<span id="bubblingG_2">
+	</span>
+	<span id="bubblingG_3">
+	</span>
+</div>
+  </div>
+
+</div>
+
+
         <!-- Main content -->
-        {% block content %}
-        {% endblock %}
-        <!-- /.conainer-fluid -->
-        </main>
-    </div>
-    <footer class="app-footer">
+    {% include "strongholdcoins/dashboard_views/actions_menu.html" %}
+
+    {% block content %}
+
+
+
+    {% endblock %}
+
+    <footer class="app-footer row">
         <a href="http://coreui.io">StrongHoldCoins</a> © 2017 StrongHoldCoins.
         <span class="float-right">Powered by <a href="https://alpharalphkay.com">AlphaRalphkay</a>
     </span>
     </footer>
+
+
     <!-- Bootstrap and necessary plugins -->
     <script src="{% static 'strongholdcoins/res/js/jquery.js' %}"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="{% static 'strongholdcoins/js/fakeLoader.min.js' %}"></script>
     <script src="{% static 'strongholdcoins/js/app.js' %}"></script>
 
 
     <script src="{% static 'strongholdcoins/datatables/datatables.min.js' %}"></script>
     <script src="{% static 'strongholdcoins/datatables/databoot.js' %}"></script>
-    <script src="{% static 'strongholdcoins/js/order_form.js' %}"></script>
-    <script src="{% static 'strongholdcoins/js/btc_select_form.js' %}"></script>
-    <script src="{% static 'strongholdcoins/js/bitcoin_calculator.js' %}"></script>
+
     <script src="{% static 'strongholdcoins/js/random.js' %}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.bundle.js"></script>
     <script src="{% static 'strongholdcoins/js/chart/custom-chart.js' %}"></script>
-    <script src="{% static 'strongholdcoins/js/crypto.js' %}"></script>
+
     <script src="{% static 'strongholdcoins/js/ticker/jquery.newsTicker.js' %}"></script>
     <script src="{% static 'strongholdcoins/jqprint/jprint.min.js' %}"></script>
+    <script src="{% static 'strongholdcoins/js/dashboard-controls.js' %}"></script>
     <script src="https://cryptocoinsnews.com/widget/bitcoin_widget.js.php" type="text/javascript"></script>
 
     <script>
+
         $('.newsticker').newsTicker();
         $('.newsticker1').newsTicker();
+        $("#fakeloader").fakeLoader({
+            timeToHide:1200, //Time in milliseconds for fakeLoader disappear
+            zIndex:"999",//Default zIndex
+            spinner:"spinner1",//Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7'
+            bgColor:"#2ecc71", //Hex, RGB or RGBA colors
+
+            });
         $(document).ready(function(){
 
             $('#history').DataTable();
@@ -126,7 +148,6 @@ table.dataTable tbody tr.even {
 
 
     </script>
-
-
+<script type='text/javascript' data-cfasync='false'>window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: '082c7f8d-f6b1-4ca0-84ab-5cf2b1aa29a3', f: true }); done = true; } }; })();</script>
     </body>
 </html>

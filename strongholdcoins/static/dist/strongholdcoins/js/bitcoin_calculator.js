@@ -18,18 +18,13 @@ $(document).ready(function () {
 
     $.getJSON(url, function (data) {
          data = $.grep(data, function (n, i) {
-            return (n.long == "Bitcoin" || n.long == "Ethereum" || n.long == "Litecoin" || n.long == "Dash" || n.long=="Ripple")
+            return (n.long === "Bitcoin" || n.long === "Ethereum" || n.long === "Litecoin" || n.long === "Dash" || n.long ==="Ripple")
         });
 
 
          for(d in data){
              $( ".newsticker1" ).append( "<li>"+data[d].long+" ("+data[d].short+") Price:"+data[d].price+"</li>" );
-         };
-
-
-
-
-
+         }
 
 
         var selectedAction = $("input[name='coin']");
@@ -61,7 +56,7 @@ $(document).ready(function () {
                 }
 
 
-            $("#amount1").on('keyup', function () {
+            $("#amount1").on('keyup keypress keydown focus blur change', function () {
             var amt = parseInt(amount1.val());
             var transaction_amount = (amt * ((transaction_rate) / 100));
 

@@ -69,9 +69,9 @@
                 <i class="large life ring middle aligned icon"></i>
                 <div class="content">
                     <div class="description">
-                    {# dashboard/user/(?P<user_pk>\d+)/order/(?P<order_pk>\d+)/edit #}
-                        <a href="{% url 'editOrder' user_pk=request.user.id order_pk=order.id %}" class="btn btn-sm btn-primary"><i class="icon ui edit"></i> Edit</a>
-                        <a href="" class="btn btn-sm btn-success"> Print</a>
+
+                        <a href="{% url 'editOrder' user_pk=request.user.id order_pk=order.id %}" class="btn btn-sm btn-primary"><i class="icon ui edit"></i>Edit</a>
+                        <a href="" class="btn btn-sm btn-success">Print</a>
                     </div>
                 </div>
             </div>
