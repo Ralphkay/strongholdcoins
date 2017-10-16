@@ -2,47 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="038205a7-c203-4171-ab68-5c1c5c4419e1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/strongholdcoins/static/dist/cluster/images/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/strongholdcoins/static/dist/cluster/images/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/strongholdcoins/static/dist/cluster/images/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/strongholdcoins/static/dist/boxify/js/jquery-3.2.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/strongholdcoins/static/dist/strongholdcoins/css/custom-home.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/strongholdcoins/static/dist/strongholdcoins/js/bankPayment.html.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/strongholdcoins/static/dist/strongholdcoins/js/coin.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/strongholdcoins/static/dist/strongholdcoins/js/dashboard-controls.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/strongholdcoins/static/dist/strongholdcoins/js/home-app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/strongholdcoins/strongholdcoins/migrations/0041_auto_20171012_1012.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/strongholdcoins/strongholdcoins/templates/strongholdcoins/dashboard_views/dashboard-edit.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/strongholdcoins/strongholdcoins/templates/strongholdcoins/dashboard_views/edit-order-form.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/strongholdcoins/strongholdcoins/validators.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/benv/Lib/site-packages/account/forms.py" afterPath="$PROJECT_DIR$/benv/Lib/site-packages/account/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/benv/Lib/site-packages/pinax_theme_bootstrap/templates/theme_bootstrap/base.html" afterPath="$PROJECT_DIR$/benv/Lib/site-packages/pinax_theme_bootstrap/templates/theme_bootstrap/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/benv/pip-selfcheck.json" afterPath="$PROJECT_DIR$/benv/pip-selfcheck.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/strongholdcoins/static/dist/cluster/css/style.css" afterPath="$PROJECT_DIR$/strongholdcoins/static/dist/cluster/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/strongholdcoins/static/dist/strongholdcoins/css/custom.css" afterPath="$PROJECT_DIR$/strongholdcoins/static/dist/strongholdcoins/css/custom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/strongholdcoins/static/dist/strongholdcoins/js/bitcoin_calculator.js" afterPath="$PROJECT_DIR$/strongholdcoins/static/dist/strongholdcoins/js/bitcoin_calculator.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/strongholdcoins/static/dist/strongholdcoins/js/btc_select_form.js" afterPath="$PROJECT_DIR$/strongholdcoins/static/dist/strongholdcoins/js/btc_select_form.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/strongholdcoins/static/dist/strongholdcoins/js/order_form.js" afterPath="$PROJECT_DIR$/strongholdcoins/static/dist/strongholdcoins/js/order_form.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/strongholdcoins/strongholdcoins/admin.py" afterPath="$PROJECT_DIR$/strongholdcoins/strongholdcoins/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/strongholdcoins/strongholdcoins/forms.py" afterPath="$PROJECT_DIR$/strongholdcoins/strongholdcoins/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/strongholdcoins/strongholdcoins/models.py" afterPath="$PROJECT_DIR$/strongholdcoins/strongholdcoins/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/strongholdcoins/strongholdcoins/settings.py" afterPath="$PROJECT_DIR$/strongholdcoins/strongholdcoins/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/strongholdcoins/strongholdcoins/templates/_account_bar.html" afterPath="$PROJECT_DIR$/strongholdcoins/strongholdcoins/templates/_account_bar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/strongholdcoins/strongholdcoins/templates/account/logout.html" afterPath="$PROJECT_DIR$/strongholdcoins/strongholdcoins/templates/account/logout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/strongholdcoins/strongholdcoins/templates/homepage.html" afterPath="$PROJECT_DIR$/strongholdcoins/strongholdcoins/templates/homepage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/strongholdcoins/strongholdcoins/templates/strongholdcoins/dashboard_views/actions_menu.html" afterPath="$PROJECT_DIR$/strongholdcoins/strongholdcoins/templates/strongholdcoins/dashboard_views/actions_menu.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/strongholdcoins/strongholdcoins/templates/strongholdcoins/dashboard_views/base_layout.html" afterPath="$PROJECT_DIR$/strongholdcoins/strongholdcoins/templates/strongholdcoins/dashboard_views/base_layout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/strongholdcoins/strongholdcoins/templates/strongholdcoins/dashboard_views/calculator.html" afterPath="$PROJECT_DIR$/strongholdcoins/strongholdcoins/templates/strongholdcoins/dashboard_views/calculator.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/strongholdcoins/strongholdcoins/templates/strongholdcoins/dashboard_views/dashboard.html" afterPath="$PROJECT_DIR$/strongholdcoins/strongholdcoins/templates/strongholdcoins/dashboard_views/dashboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/strongholdcoins/strongholdcoins/templates/strongholdcoins/dashboard_views/history_data.html" afterPath="$PROJECT_DIR$/strongholdcoins/strongholdcoins/templates/strongholdcoins/dashboard_views/history_data.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/strongholdcoins/strongholdcoins/templates/strongholdcoins/dashboard_views/order-form.html" afterPath="$PROJECT_DIR$/strongholdcoins/strongholdcoins/templates/strongholdcoins/dashboard_views/order-form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/strongholdcoins/strongholdcoins/templates/strongholdcoins/dashboard_views/order_receipt.html" afterPath="$PROJECT_DIR$/strongholdcoins/strongholdcoins/templates/strongholdcoins/dashboard_views/order_receipt.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/strongholdcoins/strongholdcoins/templates/strongholdcoins/dashboard_views/profile.html" afterPath="$PROJECT_DIR$/strongholdcoins/strongholdcoins/templates/strongholdcoins/dashboard_views/profile.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/strongholdcoins/strongholdcoins/templates/strongholdcoins/dashboard_views/toast-messages.html" afterPath="$PROJECT_DIR$/strongholdcoins/strongholdcoins/templates/strongholdcoins/dashboard_views/toast-messages.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/strongholdcoins/strongholdcoins/urls.py" afterPath="$PROJECT_DIR$/strongholdcoins/strongholdcoins/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/strongholdcoins/strongholdcoins/views.py" afterPath="$PROJECT_DIR$/strongholdcoins/strongholdcoins/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -75,8 +35,8 @@
       <file leaf-file-name="homepage.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/strongholdcoins/strongholdcoins/templates/homepage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="501" column="23" lean-forward="true" selection-start-line="501" selection-start-column="23" selection-end-line="501" selection-end-column="23" />
+            <state relative-caret-position="54">
+              <caret line="501" column="23" lean-forward="false" selection-start-line="501" selection-start-column="23" selection-end-line="501" selection-end-column="23" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -103,8 +63,8 @@
       <file leaf-file-name="base_layout.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/strongholdcoins/strongholdcoins/templates/strongholdcoins/dashboard_views/base_layout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="54" column="51" lean-forward="true" selection-start-line="51" selection-start-column="25" selection-end-line="54" selection-end-column="51" />
+            <state relative-caret-position="361">
+              <caret line="57" column="14" lean-forward="false" selection-start-line="57" selection-start-column="14" selection-end-line="57" selection-end-column="14" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -155,7 +115,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/strongholdcoins/strongholdcoins/migrations/0014_auto_20170914_1506.py" />
         <option value="$PROJECT_DIR$/strongholdcoins/strongholdcoins/wsgi.py" />
         <option value="$PROJECT_DIR$/strongholdcoins/strongholdcoins/templates/account/login.html" />
         <option value="$PROJECT_DIR$/strongholdcoins/strongholdcoins/templates/homepage-.html" />
@@ -199,13 +158,14 @@
         <option value="$PROJECT_DIR$/strongholdcoins/strongholdcoins/templates/strongholdcoins/dashboard_views/actions_menu.html" />
         <option value="$PROJECT_DIR$/strongholdcoins/strongholdcoins/templates/strongholdcoins/dashboard_views/profile.html" />
         <option value="$PROJECT_DIR$/strongholdcoins/strongholdcoins/forms.py" />
-        <option value="$PROJECT_DIR$/strongholdcoins/strongholdcoins/templates/strongholdcoins/dashboard_views/base_layout.html" />
         <option value="$PROJECT_DIR$/strongholdcoins/strongholdcoins/templates/old-homepage.html" />
         <option value="$PROJECT_DIR$/strongholdcoins/static/dist/strongholdcoins/js/home-app.js" />
         <option value="$PROJECT_DIR$/strongholdcoins/strongholdcoins/templates/strongholdcoins/dashboard_views/dashboard.html" />
         <option value="$PROJECT_DIR$/strongholdcoins/static/dist/cluster/css/style.css" />
         <option value="$PROJECT_DIR$/strongholdcoins/static/dist/strongholdcoins/css/custom-home.css" />
         <option value="$PROJECT_DIR$/strongholdcoins/strongholdcoins/templates/homepage.html" />
+        <option value="$PROJECT_DIR$/strongholdcoins/.gitignore" />
+        <option value="$PROJECT_DIR$/strongholdcoins/strongholdcoins/templates/strongholdcoins/dashboard_views/base_layout.html" />
       </list>
     </option>
   </component>
@@ -272,109 +232,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="strongholdcoins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="strongholdcoins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="finalproject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="finalproject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="strongholdcoins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="strongholdcoins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="finalproject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="finalproject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="strongholdcoins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="finalproject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="finalproject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="strongholdcoins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="finalproject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="finalproject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="strongholdcoins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cluster" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="finalproject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="finalproject" />
+              <option name="myItemId" value="benv" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -595,7 +453,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -631,20 +489,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/strongholdcoins/static/dist/strongholdcoins/js/bitcalculator.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-624">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/strongholdcoins/static/dist/strongholdcoins/js/bankPayment.html.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="0" column="238" lean-forward="false" selection-start-line="0" selection-start-column="238" selection-end-line="0" selection-end-column="238" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/strongholdcoins/static/dist/strongholdcoins/js/crypto.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -950,11 +794,11 @@
         <state relative-caret-position="-920">
           <caret line="19" column="44" lean-forward="true" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
           <folding>
-            <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#main#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#main#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#div#1;n#div#0;n#main#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#h3#0;n#div#1;n#div#1;n#div#0;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#1;n#div#1;n#div#0;n#main#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#main#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#div#2;n#div#1;n#div#0;n#main#0;n#!!top" expanded="false" />
           </folding>
@@ -1005,8 +849,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/strongholdcoins/strongholdcoins/templates/homepage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="501" column="23" lean-forward="true" selection-start-line="501" selection-start-column="23" selection-end-line="501" selection-end-column="23" />
+        <state relative-caret-position="54">
+          <caret line="501" column="23" lean-forward="false" selection-start-line="501" selection-start-column="23" selection-end-line="501" selection-end-column="23" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -1029,10 +873,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/strongholdcoins/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/strongholdcoins/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/strongholdcoins/strongholdcoins/templates/strongholdcoins/dashboard_views/base_layout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="54" column="51" lean-forward="true" selection-start-line="51" selection-start-column="25" selection-end-line="54" selection-end-column="51" />
+        <state relative-caret-position="361">
+          <caret line="57" column="14" lean-forward="false" selection-start-line="57" selection-start-column="14" selection-end-line="57" selection-end-column="14" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
