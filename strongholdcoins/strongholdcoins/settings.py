@@ -75,7 +75,7 @@ STATICFILES_FINDERS = [
 ]
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = "&1d*yflhe4z4cmg1=7en32s_kh6too7&^sta793523am__rmqw"
+SECRET_KEY = ""
 
 TEMPLATES = [
     {
@@ -227,9 +227,9 @@ EMAIL_SUBJECT_PREFIX = ['STRONGHOLDCOINS']
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'raphaelkofiamponsah@gmail.com'
-EMAIL_HOST_PASSWORD = 'mylove99'
-DEFAULT_FROM_EMAIL = 'raphaelkofiamponsah@gmail.com'
-DEFAULT_TO_EMAIL = 'ralphmaximillian@gmail.com'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
+DEFAULT_FROM_EMAIL = ''
+DEFAULT_TO_EMAIL = ''
 
-ADMINS = [('Ralph', EMAIL_HOST_USER)]
+ADMINS = [('', EMAIL_HOST_USER)]
